@@ -4,7 +4,6 @@ import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
-
 import java.io.IOException;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -40,8 +39,7 @@ public class ConnectionController {
                 stage.show();
 
             } catch (IOException e) {
-                e.printStackTrace();
-            }
+                e.printStackTrace();}
         });
     }
 }
