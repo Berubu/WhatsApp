@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<StackPane xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="isa.whatsapp.ChatController">
+   <children>
+      <ImageView fx:id="backgroundImage" fitHeight="430.0" fitWidth="295.0" preserveRatio="true" />
+      <AnchorPane prefHeight="391.0" prefWidth="295.0">
+         <children>
+            <ScrollPane fx:id="scrollPane" fitToWidth="true" layoutX="14.0" layoutY="14.0" prefHeight="337.0" prefWidth="268.0">
+               <content>
+                  <VBox fx:id="messagesBox" spacing="10.0" />
+               </content>
+            </ScrollPane>
+            <TextField fx:id="messageField" layoutX="14.0" layoutY="361.0" prefHeight="25.0" prefWidth="210.0" />
+            <Button fx:id="sendButton" layoutX="234.0" layoutY="361.0" mnemonicParsing="false" text="Enviar" />
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>

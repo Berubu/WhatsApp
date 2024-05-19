@@ -1,0 +1,31 @@
+.root {
+    -fx-font-family: 'Arial';
+    -fx-background-color: #ffffff;
+}
+
+.scroll-pane {
+    -fx-background: transparent;
+}
+
+.text-field {
+    -fx-background-radius: 20;
+    -fx-background-color: #F5F5F5;
+    -fx-padding: 5px;
+    -fx-border-color: #E0E0E0;
+    -fx-border-radius: 20;
+}
+
+.button {
+    -fx-background-color: #8c6973;
+    -fx-text-fill: white;
+    -fx-background-radius: 20;
+}
+
+.button:hover {
+    -fx-background-color: #8c6973;
+}
+
+.label {
+    -fx-text-fill: black;
+    -fx-font-size: 14px;
+}
