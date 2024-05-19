@@ -7,6 +7,7 @@ import java.util.*;
 public class ChatServer {
     private static final int PORT = 2121;
     //host de la casa: 192.168.1.13
+    //host del tec: 
     private static Set<ClientHandler> clientHandlers = new HashSet<>();
 
     public static void main(String[] args) {
@@ -59,10 +60,10 @@ public class ChatServer {
                 e.printStackTrace();
             } finally {
                 try {
-                    socket.close();
-                    clientHandlers.remove(this);
-                    System.out.println(userName + " se ha desconectado.");
-                    broadcast(userName + " ha dejado el chat.", this);
+                socket.close();
+                clientHandlers.remove(this);
+                System.out.println(userName + " se ha desconectado.");
+                broadcast(userName + " ha dejado el chat.", this);
                 } catch (IOException e) {
                     e.printStackTrace();
                 }
